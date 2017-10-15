@@ -1,1 +1,1 @@
-# crazy
+# crazy - site for demonstration adaptive web-design
