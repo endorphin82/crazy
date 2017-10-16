@@ -1,10 +1,15 @@
 /* specification */
-
+*{
+    border: 1px red solid;
+}
 body {
     font-family: 'Work Sans', Verdana, Arial sans-serif;
     font-size: 16px;
     color: #848484;
 }
+/*.container {
+    weight: 920px;
+}*/
 
 h1,
 h2,
