@@ -441,6 +441,19 @@ margin-right: 30px;
 .menu__links{
     color: #848484;
 }
+.basic__purchase{
+    padding: 5%;
+}
+.standard__purchase{
+    padding: 5%;
+}
+.deluxe__purchase{
+    padding: 5%;
+}
+.unlimited__purchase{
+    padding: 5%;
+
+}
 
 /* media */
 /*
