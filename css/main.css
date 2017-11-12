@@ -1,7 +1,4 @@
 /* specification */
-*{
-    border: 1px red solid;
-}
 body {
     font-family: 'Work Sans', Verdana, Arial sans-serif;
     font-size: 16px;
@@ -92,9 +89,10 @@ header {
 .offer__links-item a:hover {
     opacity: 1;
 }
-
+.head {
+    padding: 5% 0 0 0;
+}
 .iphone {
-    margin-top: 94px;
     display: block;
     width: 100%;
 }
@@ -460,6 +458,9 @@ margin-right: 30px;
     .menu{
         font-size: 12px;
     }
+    .head{
+        padding: 10% 0 10% 0;
+    }
 }
 
 
@@ -478,5 +479,8 @@ margin-right: 30px;
     }
     .menu{
         font-size: 10px;
+    }
+    .head{
+        padding: 10% 0 10% 0;
     }
 }
