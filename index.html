@@ -8,11 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/arund.min.css">
-    <!--caroucel-->
-    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
-
+    <!-- <link rel="stylesheet" href="css/arund.min.css">
+    caroucel-->
+    <link rel="stylesheet" href="libs/swiper.min.css">
 </head>
 
 <body>
@@ -198,49 +196,51 @@
 
   <section id="quote">
         <div class="container">
-            <div id="owl" class="owl-carousel d-flex">
-                <div class="item">
-                    <div class="quote_text">
-                        “Craze111 is one of the most complete app packages I have ever come across. I would highly reccomend it to anyone!”
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="quote-all">
+                        <p class="quote_text">
+                            “Craze111 is one of the most complete app packages I have ever come across. I would highly reccomend it to anyone!”
+                        </p>
+
+                        <p class="quote_author">
+                            dsfs ptt1
+                        </p>
+                        </div>
                     </div>
-                    <div class="quote_author">
-                        <br>Sarah 1Hunt
+                    <div class="swiper-slide d-flex">
+                        <div class="quote-all">
+                            <p class="quote_text">
+                                “Craze222 is one of the most complete app packages I have ever come across. I would highly reccomend it to anyone!”
+                            </p>
+
+                            <p class="quote_author">
+                                22dsfs ptt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="quote-all">
+                            <p class="quote_text">
+                                “Craze3333 is one of the most complete app packages I have ever come across. I would highly reccomend it to anyone!”
+                            </p>
+
+                            <p class="quote_author">
+                                33auth edfg
+                            </p>
+                        </div>
+
                     </div>
                 </div>
-                <div class="item">
-                    <div class="quote_text">
-                        “Craze 222is one of the most complete app packages I have ever come across. I would highly reccomend it to anyone!”
-                    </div>
-                    <div class="quote_author">
-                        <br>Sarah 2Hunt
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="quote_text">
-                        “Craze is333one of the most complete app packages I have ever come across. I would highly reccomend it to anyone!”
-                    </div>
-                    <div class="quote_author">
-                        <br>Sarah 3Hunt
-                    </div>
-                </div>
-           <!-- <p class="quote__text">
-                “Craze is one of the most complete app packages I have ever come across. I would highly reccomend it to anyone!”
-            </p>
-            <p class="quote__auth">
-                Sarah Hunt
-            </p>
-            <ul class="quote__but d-flex">
-                <li class="quote__but quote__but-1">
-                    <a href="#"></a>
-                </li>
-                <li class="quote__but quote__but-2">
-                    <a href="#"></a>
-                </li>
-                <li class="quote__but quote__but-3">
-                    <a href="#"></a>
-                </li>
-            </ul>
--->
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
         </div>
      </div>
    </section>
@@ -522,9 +522,24 @@
 
         </div>
     </footer>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
